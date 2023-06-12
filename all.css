@@ -1,0 +1,539 @@
+/*-------------------- reset -------------------- */
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/*-------------------- box-sizing -------------------- */
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: black;
+  font-family: "Noto Sans TC", sans-serif;
+}
+
+.container {
+  margin: 0 auto;
+  width: 1296px;
+  color: white;
+}
+
+/*---------- navbar ------------- */
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 0px;
+  border-bottom: 1px solid white;
+}
+
+.logo {
+  width: 224px;
+}
+.logo img {
+  max-width: 100%;
+}
+
+.menu-list {
+  width: 84px;
+  display: flex;
+  justify-content: space-between;
+  color: white;
+  font-weight: 700;
+}
+
+/*---------- banner ------------- */
+
+.banner h1 {
+  font-size: 120px;
+  font-weight: 900;
+  padding: 40px 0px;
+  line-height: 144px;
+}
+
+.banner a {
+  border: 1px solid white;
+  padding: 20px 40px;
+  border-radius: 16px;
+  font-size: 20px;
+  font-weight: 900;
+  text-decoration: none;
+  color: white;
+  display: block;
+  width: 162px;
+  margin-bottom: 100px;
+}
+
+.banner-img {
+  display: flex;
+  justify-content: flex-end;
+  margin-bottom: 160px;
+}
+
+/*---------- serve ------------- */
+
+.serve {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 80px;
+}
+
+.serve h3 {
+  font-size: 32px;
+  font-weight: 900;
+}
+
+.serve p {
+  font-size: 48px;
+  font-weight: 900;
+  width: 856px;
+  line-height: 57.6px;
+}
+
+/*---------- serve-cadr ------------- */
+
+.serve-card {
+  line-height: 24px;
+  margin-bottom: 160px;
+}
+
+.serve-card-list {
+  display: flex;
+  justify-content: space-between;
+}
+
+.s-card {
+  width: 416px;
+  padding: 80px 40px;
+  border: 1px solid #525252;
+  border-radius: 16px;
+}
+
+.s-card img {
+  margin-bottom: 26.6px;
+}
+
+.s-card h3 {
+  font-size: 32px;
+  font-weight: 900;
+  margin-bottom: 20px;
+}
+
+/*---------- partner ------------- */
+
+.partner {
+  margin-bottom: 160px;
+}
+
+.partner h3 {
+  font-size: 32px;
+  font-weight: 900;
+  margin-bottom: 80px;
+}
+
+.partner-logo {
+  width: 1296px;
+  height: 40px;
+  display: flex;
+  justify-content: space-around;
+}
+
+.partner-logo img {
+  width: 100%;
+  height: 100%;
+}
+
+/*---------- partner-card ------------- */
+
+.partner-card{
+  margin-bottom :160px;
+}
+
+.partner-card-list {
+  display: flex;
+  justify-content: space-between;
+}
+
+.p-card {
+  width: 416px;
+  background-color: rgba(255, 255, 255, 0.08);
+  border-radius: 16px;
+  padding: 40px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.p-text {
+  height: 215px;
+  line-height: 24px;
+}
+
+.p-info {
+  display: flex;
+}
+
+.p-info img {
+  margin-right: 16px;
+}
+
+.p-info-text {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+.p-info-text h6 {
+  font-weight: 700;
+}
+
+.p-info-text p {
+  font-size: 14px;
+}
+
+/*---------- ai-king ------------- */
+
+.ai-king-bg {
+  background-color: white;
+  border-radius: 160px;
+}
+
+.ai-king-container {
+  width: 1296px;
+  margin: 0 auto;
+  padding: 160px 0px;
+}
+
+.ai-king-container h1 {
+  font-size: 80px;
+  font-weight: 900;
+  text-align: center;
+  margin-bottom: 80px;
+}
+
+/*---------- ai-king-search ------------- */
+
+.search {
+  background-color: #f2f2f2;
+  padding: 20px 43px;
+  border-radius: 16px;
+  margin-bottom: 24px;
+  display: flex;
+  align-items: center;
+  color: #919191;
+}
+
+.search span{
+    margin-right: 16px;
+}
+
+/*---------- ai-king-menu ------------- */
+
+.icon-menu {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 40px;
+}
+
+.filter {
+  display: flex;
+  align-items: center;
+  padding: 20px 32px 20px 40px;
+  border: 1px solid #f2f2f2;
+  border-radius: 16px;
+}
+
+.filter p{
+    margin-right: 14.6px;
+}
+
+.icon-list {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 544px;
+}
+
+.icon-bt{
+  color: #919191;
+  padding: 8px 16px;
+  background-color:rgba(255, 255, 255, 0) ;
+  border-radius: 16px;
+}
+
+.icon-bt:hover{
+  color: black;
+  padding: 8px 16px;
+  background: #f2f2f2;
+  border-radius: 16px;
+}
+
+.icon-bt-hover {
+  padding: 8px 16px;
+  background: #f2f2f2;
+  border-radius: 16px;
+}
+
+.sequence {
+  display: flex;
+  align-items: center;
+  padding: 20px 32px 20px 40px;
+  border: 1px solid #f2f2f2;
+  border-radius: 16px;
+}
+
+.sequence p{
+  margin-right: 16px;
+}
+
+/*---------- ai-king-card ------------- */
+
+a {
+  color: black;
+}
+
+.card-list {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  margin-bottom: 16px;
+}
+
+.card {
+  width: 416px;
+  border: #f2f2f2 solid 1px;
+  border-radius: 16px;
+  margin-bottom: 24px;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+}
+
+.card-header {
+  overflow: hidden;
+}
+
+.card-header img {
+  max-width: 100%;
+  transition: transform 0.3s;
+  transition-timing-function: ease-in;
+}
+
+.card-header img:hover {
+  transform: scale(1.2);
+  /*   放大1.2倍數 */
+}
+
+.card-title {
+  padding: 20px 32px;
+  border-bottom: #f2f2f2 solid 1px;
+  flex-grow: 1;
+}
+
+.card-title h3 {
+  margin-bottom: 12px;
+  font-size: 20px;
+  font-weight: 900;
+}
+
+.card-title p {
+  font-size: 14px;
+  color: #525252;
+}
+
+.card-mode {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px 32px;
+  border-bottom: #f2f2f2 solid 1px;
+}
+
+.card-mode span {
+  font-weight: 700;
+}
+
+.card-share {
+  padding: 20px 32px;
+  display: flex;
+  justify-content: space-between;
+}
+
+/*---------- page ------------- */
+
+.page-list{
+    display: flex;
+    justify-content:flex-end;
+}
+
+.number-fix{
+    font-size: 14px;
+    font-weight: 700;
+    text-align: center;
+    line-height: 48px;
+    background-color: black;
+    width: 48px;
+    height: 48px;
+    border-radius: 16px;
+    color: white;
+    margin-right: 4px;
+}
+
+.number{
+    font-size: 14px;
+    font-weight: 700;
+    text-align: center;
+    line-height: 48px;
+    background-color: rgba(255, 255, 255, 0);
+    width: 48px;
+    height: 48px;
+    border-radius: 16px;
+    margin-right: 4px;
+}
+
+.page-list span{
+    text-align: center;
+    line-height: 48px;
+    background-color: rgba(255, 255, 255, 0);
+    width: 48px;
+    height: 48px;
+    border-radius: 16px;
+}
+
+/*---------- build ------------- */
+
+.build{
+    padding: 160px 0px;
+}
+
+.build h4{
+    font-size: 48pt;
+    font-weight: 900;
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.build-bt a{
+    color: white;
+    text-decoration: none;
+    display: flex;
+    justify-content: center;
+    border: 1px solid white;
+    border-radius: 16px;
+    padding: 20px 32px 20px 40px;
+    width: 211px;
+    margin: 0 auto;
+}
+
+.build-bt p{
+    font-size: 20px;
+    font-weight: 900;
+    margin-right: 16px;
+}
+
+/*---------- footer-price ------------- */
+
+.footer-price{
+    display: flex;
+    justify-content: space-between;
+    padding: 80px 0px;
+    border-top:1px solid white ;
+}
+
+.footer-price h1{
+    font-size: 80px;
+    font-weight: 900;
+    line-height: 96px;
+}
+
+.footer-logo{
+    width: 245px;
+}
+
+.footer-logo img{
+    width: 100%;
+}
+
+/*---------- footer ------------- */
+
+.footer{
+    display: flex;
+    justify-content: space-between;
+    padding: 32px 0px;
+    border-top:1px solid white ;
+}
+
+.footer-info{
+    display: flex;
+}
+
+.footer-info p{
+    width: 203px;
+    font-weight: 700;
+    margin-right: 20px;
+}
+
+.social{
+    display: flex;
+}
+
+.social-software{
+    font-weight: 700;
+    margin-right: 20px;
+}
+
+.top a{
+    color: white;
+    text-decoration: none;
+    display: flex;
+}
+
+.top p{
+    font-weight: 700;
+    margin-right: 16px;
+}
