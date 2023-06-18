@@ -205,32 +205,27 @@ h1 {
 }
 
 .linear-gradient{
-  
-  background-image: linear-gradient(to right, #F00, rgba(0,0,0,0),#F00, );
+  position: relative;
 }
 
-.linear-gradient::after{
-  
-  background-image: linear-gradient(to right, #F00, rgba(0,0,0,0) );
-}
-
-/* .linear-gradient::before{
+.linear-gradient::before{
   content: "";
   position: absolute;
+  left: -1px;
   width: 15%;
   height: 100px;
   background-image: linear-gradient(to right, #583b3b 25%, rgba(43, 35, 116, 1));
-  z-index: 2; */
+  }
 
-
-/* .linear-gradient::after{
-  content: "";
+.linear-gradient::after{
+  content: "我";
   position: absolute;
+  top: 0px;
+  right: 0px;
   width: 15%;
   height: 100px;
-  background-image: linear-gradient(to right, #842a2a 25%, rgba(0, 0, 0, 0));
-  z-index: 2;
-} */
+  background-image: linear-gradient(to left, #842a2a 25%, rgba(0, 0, 0, 0));
+}
 
 /*---------- partner-card ------------- */
 
